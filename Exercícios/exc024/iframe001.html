@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos Iframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+            background-color: green;
+            color: white;
+            height: 50px;
+            position: sticky;
+            top: 0;
+        }
+
+        p {
+            text-align: center;
+            border: 1px solid green;
+            color: white;
+            background-color: lightgreen;
+            padding: 15px;
+        }
+
+        ul {
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        li {
+            text-transform: uppercase;
+            font-weight: bolder;
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+
+        }
+
+        #verde {
+            color: #fff;
+            transition: 0.5s;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: rgb(0, 247, 0);
+        }
+
+        #verde:hover {
+            color: green;
+            background-color: rgb(148, 255, 141);
+        }
+
+        #verde:active {
+            border-radius: 5px;
+            padding: 20px 50px;
+            font-size: 0.7em;
+        }
+
+        #laranja {
+            color: #fff;
+            transition: 0.5s;
+            background-color: rgb(205, 55, 0);
+            padding: 15px;
+            border-radius: 15px;
+
+        }
+
+        #laranja:hover {
+            color: darkred;
+            background-color: rgb(250, 155, 120);
+        }
+
+        #laranja:active {
+            border-radius: 5px;
+            padding: 20px 50px;
+            font-size: 0.7em;
+        }
+
+        #azul {
+            color: #fff;
+            transition: 0.5s;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: rgb(0, 200, 255);
+        }
+
+        #azul:hover {
+            color: blue;
+            background-color: rgb(129, 228, 255);
+        }
+
+        #azul:active {
+            border-radius: 5px;
+            padding: 20px 50px;
+            font-size: 0.7em;
+        }
+
+        iframe {
+            margin-left: 300px;
+            height: 720px;
+            width: 1280px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Escolha um <em>Pokemon &copy;</em></p>
+    <ul>
+        <li><a id="verde" href="https://pokemon.gameinfo.io/pt-br/pokemon/1-bulbasaur" target="frame">Bulbasaur</a></li>
+        <li><a id="laranja" href="https://pokemon.gameinfo.io/pt-br/pokemon/4-charmander" target="frame">Charmander</a>
+        </li>
+        <li><a id="azul" href="https://pokemon.gameinfo.io/pt-br/pokemon/7-squirtle" target="frame">Squirtle</a></li>
+    </ul>
+
+    <iframe src="" frameborder="0" name="frame">
+
+
+    </iframe>
+
+
+
+</body>
+
+</html>
