@@ -33,3 +33,32 @@ main {
     width: 311px;
     background: url('pacote-d013/imagens/frame-iphone.png') no-repeat;
 }
+
+#screen {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    height: 471px;
+    width: 269px;
+}
+
+#redes-sociais {
+    position: relative;
+    float: right;
+    margin-top: 200px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: block;
+    transition: 0.5s;
+    margin: 30px 30px;
+
+}
+
+img:hover {
+    transform: scale(1.5, 1.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.431);
+}
