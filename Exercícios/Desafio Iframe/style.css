@@ -36,9 +36,9 @@ main {
 
 #screen {
     position: relative;
-    top: 80px;
-    left: 22px;
-    height: 471px;
+    top: 79px;
+    left: 21px;
+    height: 473px;
     width: 269px;
 }
 
@@ -62,4 +62,10 @@ img:hover {
     transform: scale(1.5, 1.5);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.431);
     border: 1px solid white;
+}
+
+img:active {
+    transform: scale(0.8, 0.8);
+    border: 2px solid gray;
+    opacity: 0.85;
 }
