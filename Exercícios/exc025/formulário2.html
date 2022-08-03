@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício Formulário 2</title>
+    <style>
+        /* Control + tecla acima de "Fn" cria um comentário automático */
+    </style>
+    <!--  -->
 </head>
 
 <body>
@@ -17,8 +21,21 @@
                 maxlength="30">
         </p>
         <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" required size="5" min="0" max="10" placeholder="0 a 10">
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required size="5" min="0" max="10" placeholder="0 a 10"
+                step="0.1" value="6">
+        </p>
+        <p>
+            <label for="imes">Período letivo:</label>
+            <input type="month" id="imes" name="mes" value="2022-08">
+        </p>
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="data" id="idia" value="2022-08-03">
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova:</label>
+            <input type="time" name="hora" id="ihora" value="00:00">
         </p>
         <p>
             <input type="submit" value="Enviar">
