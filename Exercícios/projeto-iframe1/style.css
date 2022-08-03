@@ -16,7 +16,6 @@ body {
 body {
     background: black url('pacote-d013/imagens/fundo-madeira.jpg') bottom center no-repeat fixed;
     background-size: cover;
-
 }
 
 main {
@@ -54,7 +53,7 @@ img {
     border-radius: 50%;
     display: block;
     transition: 0.4s;
-    margin: 30px 30px;
+    margin: 30px;
 
 }
 
