@@ -5,11 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+    <style>
+        @charset "UTF-8";
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            width: 80%;
+            margin: auto;
+            padding: 15px;
+
+        }
+
+        input {
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Exemplo de Formulário</h1>
+    <fieldset>
+        <legend>Sexo </legend>
+        <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label> <br>
+        <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+    </fieldset>
 
+
+
+
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes Favoritos </legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Vôlei</label> <br>
+            <input type="checkbox" name="esping" id="iesping"><label for="iesping">Tênis de Mesa</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+
+    </form>
 </body>
 
 </html>
