@@ -16,19 +16,24 @@
     <form action="arquivo.php" method="post" autocomplete="on">
         <p>
             <label for="inome">Nome completo:</label>
-            <input type="text" required minlength="0" maxlength="50">
+            <input type="text" required minlength="0" maxlength="50" placeholder="Iracildo Serra Júnior">
         </p>
         <p>
             <label for="iemail">Email:</label>
-            <input type="email" name="email" id="iemail" required maxlength="50">
+            <input type="email" name="email" id="iemail" required maxlength="50" placeholder="iracildoemail@gmail.com">
         </p>
         <p>
             <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" required maxlength="20">
+            <input type="password" name="senha" id="isenha" required maxlength="20" placeholder="iracildo@123">
+        </p>
+        <p>
+            <label for="ifoto">Foto de Perfil:</label>
+            <input type="file" name="foto" id="ifoto" required>
         </p>
         <p>
             <label for="iest">Estado:</label>
-            <select name="est" id="iest">
+            <select name="est" id="iest" required>
+                <option value="" selected>...Escolha...</option>
                 <optgroup label="Região Sudeste">
                     <option value="MG">Minas Gerais</option>
                     <option value="RJ">Rio de Janeiro</option>
@@ -40,9 +45,10 @@
                     <option value="PE">Pernambuco</option>
                 </optgroup>
             </select>
+        </p>
         <p>
             <label for="iprof">Profissão:</label>
-            <input type="text" name="prof" id="iprof" list="lstprof">
+            <input type="text" name="prof" id="iprof" list="lstprof" required>
             <datalist id="lstprof">
                 <option value="DEV">Desenvolvedor</option>
                 <option value="ADM">Administrador</option>
@@ -51,7 +57,6 @@
                 <option value="PROF">Professor</option>
             </datalist>
         </p>
-        </p>
         <p>
             <label for="icor">Cor Preferida:</label>
             <input type="color" name="cor" id="icor">
@@ -59,6 +64,36 @@
         <p>
             <label for="irange">Range:</label>
             <input type="range" name="range" id="irange" min="0" max="10" value="5" required>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="10" rows="5" placeholder="Olá, mundo!"></textarea>
+        </p>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LIMPAR">
+    </form>
+
+    <h1>Formulário de Números e Soma com JavaScript</h1>
+    <form action="numeros.php" method="get" autocomplete="off">
+
+        <p>
+            <label for="in1">Ponha um Número aqui:</label>
+            <input type="number" name="n1" id="in1" min="0" max="10" required
+                oninput="isoma.inneHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
+        </p>
+        <p>
+            <label for="in2">Ponha outro Número aqui:</label>
+            <input type="number" name="n2" id="in2" min="0" max="10" required
+                oninput="isoma.inneHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
+        </p>
+        <p>
+            <label for="in3">Ponha mais um Número aqui:</label>
+            <input type="number" name="n3" id="in3" min="0" max="10" required
+                oninput="isoma.inneHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
+        </p>
+        <p>
+            <label for="isoma">A soma desses Números é:</label>
+            <output name="soma" id="isoma">0</output>
         </p>
 
         <input type="submit" value="ENVIAR">
