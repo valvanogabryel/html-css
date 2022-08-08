@@ -75,30 +75,54 @@
 
     <h1>Formulário de Números e Soma com JavaScript</h1>
     <form action="numeros.php" method="get" autocomplete="off">
-
         <p>
             <label for="in1">Ponha um Número aqui:</label>
             <input type="number" name="n1" id="in1" min="0" max="10" required
-                oninput="isoma.inneHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
         </p>
         <p>
             <label for="in2">Ponha outro Número aqui:</label>
             <input type="number" name="n2" id="in2" min="0" max="10" required
-                oninput="isoma.inneHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
         </p>
         <p>
             <label for="in3">Ponha mais um Número aqui:</label>
             <input type="number" name="n3" id="in3" min="0" max="10" required
-                oninput="isoma.inneHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value) + Number(in3.value)">
         </p>
         <p>
             <label for="isoma">A soma desses Números é:</label>
             <output name="soma" id="isoma">0</output>
         </p>
 
+        <h2>Range com Número indicador</h2>
+        <p>
+
+            <label for="inum">Número:</label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5"
+                oninput="ival.innerHTML = Number(inum.value)">
+            <output name="valor" id="ival">5</output>
+        </p>
+
+
+        <h2>Idade responsiva</h2>
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1922" max="2022" required oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">A sua idade é:</label>
+            <output name="idade" id="iidade">0</output>
+        </p>
         <input type="submit" value="ENVIAR">
         <input type="reset" value="LIMPAR">
     </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 
 </html>
