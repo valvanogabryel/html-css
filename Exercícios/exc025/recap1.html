@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recaptulando</title>
+    <style>
+        input {
+            display: block;
+        }
+
+        form {
+            padding: 10px;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="post">
+        <label for="icor">Cor:</label>
+        <input type="color">
+
+        <label for="inivel">Nivel de Satisfacão:</label>
+        <input type="range" min="1" max="5" value="5">
+
+        <label for="ifoto">Foto de Perfil:</label>
+        <input type="file">
+
+        <label for="iest">Estado:</label>
+        <select name="estado" id="iest">
+            <option value="" selected>...Escolha..</option>
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option value="ADM">Administrador</option>
+            <option value="PROF">Professor</option>
+            <option value="COZ">Cozinheiro</option>
+        </datalist>
+
+    </form>
+</body>
+
+</html>
