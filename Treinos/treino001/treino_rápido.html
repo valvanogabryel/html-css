@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Rápido</title>
+    <link rel="stylesheet" href="style/style.css" media="all">
+    <link rel="stylesheet" href="style/portrait.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="style/landscape.css" media="screen and (orientation: landscape">
+    <link rel="stylesheet" href="style/print.css" media="print">
+</head>
+
+<body>
+    <form action="teste.php" method="post" autocomplete="on0">
+        <label for="in1">Número UM:</label>
+        <input type="number" name="n1" id="in1" required min="0" max="10" step="0.1"
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+        <label for="in2">Número DOIS:</label>
+        <input type="number" name="n2" id="in2" required min="0" max="10" step="0.1"
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+        <label for="isoma">Soma de ambos:</label>
+        <output id="isoma" name="soma">0</output>
+
+        <label for="ifile">Files:</label>
+        <input type="file" name="file" id="ifile">
+
+        <label for="irange">Range:</label>
+        <input type="range" name="range" id="irange" value="5" min="0" max="10"
+            oninput="inum.innerHTML = Number(irange.value)">
+        <output name="num" id="inum">5</output>
+
+        <label for="iteste">Teste:</label>
+        <select name="teste" id="iteste">
+            <optgroup label="Teste">
+                <option value="" selected>...Escolha...</option>
+                <option value="tt">Teste</option>
+                <option value="tt">Teste</option>
+                <option value="tt">Teste</option>
+                <option value="tt">Teste</option>
+            </optgroup>
+            <optgroup label="Teste2">
+                <option value="tt">Teste</option>
+                <option value="tt">Teste</option>
+                <option value="tt">Teste</option>
+                <option value="tt">Teste</option>
+            </optgroup>
+        </select>
+
+        <label for="iprof">Teste Prof</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option value="tt">Teste</option>
+            <option value="tt">Teste</option>
+            <option value="tt">Teste</option>
+            <option value="tt">Teste</option>
+            <option value="tt">Teste</option>
+        </datalist>
+        <textarea name="area" id="iarea" cols="30" rows="10" placeholder="lorem ipsum sit dolor erectum"></textarea>
+
+        <label for="icor">Cor</label>
+        <input type="color" name="cor" id="icor">
+
+
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LIMPAR">
+
+    </form>
+
+</body>
+
+</html>
