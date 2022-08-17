@@ -21,6 +21,10 @@
     padding: 0px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html,
 body {
     min-height: 100vh;
